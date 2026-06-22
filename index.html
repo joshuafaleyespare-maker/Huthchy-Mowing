@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hutchy's Lawn Mowing Service | Adelaide, SA</title>
+    <meta name="description" content="Hutchy's Lawn Mowing Service - The most reliable lawn mowing team in Adelaide, SA. Mowing, edging, and gardening services.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <img src="logo1.png" alt="Hutchy's Lawn Mowing Service" class="logo-img">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn btn-primary nav-cta">Get a Free Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Hutchy's Lawn<br>Mowing Service</h1>
+            <p>The most reliable lawn mowing team in your area. We show up on time, every time, and get the job done right.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Get Your Free Quote
+                </a>
+                <a href="#services" class="btn btn-outline btn-lg">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">WHAT WE DO</span>
+                <h2>Our Services</h2>
+                <p>All our services include mowing, edging and gardening for that complete, professional finish.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="mowing.jpg" alt="Lawn mowing service">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-label">LAWN CARE</span>
+                        <h3>Mowing</h3>
+                        <p>Keep your lawn looking pristine with our regular mowing services, ensuring a well-manicured and healthy yard.</p>
+                        <a href="#contact" class="btn btn-primary btn-block">GET A FREE QUOTE &rarr;</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="edging.jpg" alt="Lawn edging service">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-label">LAWN CARE</span>
+                        <h3>Edging</h3>
+                        <p>Enhance your lawn's appearance with our precise edging services, creating clean, crisp borders around your driveway and pathways.</p>
+                        <a href="#contact" class="btn btn-primary btn-block">GET A FREE QUOTE &rarr;</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="gardening.jpg" alt="Gardening service">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-label">LAWN CARE</span>
+                        <h3>Gardening</h3>
+                        <p>Keep your garden beds looking their best with weeding, pruning, and general garden maintenance.</p>
+                        <a href="#contact" class="btn btn-primary btn-block">GET A FREE QUOTE &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose" id="about">
+        <div class="container">
+            <div class="why-choose-grid">
+                <div class="why-choose-text">
+                    <span class="section-label">WHY CHOOSE HUTCHY'S</span>
+                    <h2>Supporting <em>Local Adelaide</em></h2>
+                    <p>Hutchy's Lawn Mowing Service is proudly locally owned and operated right here in Adelaide, SA. As a local business owner, Hutchy understands the needs of the community because he's part of it.</p>
+                    <p>When you choose Hutchy's, you're not just getting a great lawn &mdash; you're supporting a local resident who genuinely cares about the neighbourhood. Every job is done with the same pride and attention to detail as if it were his own front yard.</p>
+                </div>
+                <div class="why-choose-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                        </div>
+                        <h4>Friendly Staff</h4>
+                        <p>Our team is approachable, professional, and always happy to help.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h4>Local & Proud</h4>
+                        <p>Locals serving our own community with pride.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h4>Always On Time</h4>
+                        <p>We show up when we say we will &mdash; every single time.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                        </div>
+                        <h4>Family Run Business</h4>
+                        <p>Over 10+ years of experience with a commitment to going the extra mile.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">WHAT CLIENTS SAY</span>
+                <h2>Real Reviews from Real Customers</h2>
+                <p>See what homeowners and businesses in our area have to say about our service.</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p class="review-text">"Arrived at the date and time they booked, worked really fast and they charged what they quoted. Will be booking them for all future gardening services!"</p>
+                    <p class="review-author">&mdash; Tory Howell</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p class="review-text">"Excellent service, arrived on time did a thorough job as discussed, accommodating, friendly and at a good cost. Will be using this service again."</p>
+                    <p class="review-author">&mdash; John Sheridan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area Section -->
+    <section class="service-area" id="area">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">WHERE WE WORK</span>
+                <h2>Our Service Area</h2>
+                <p>We service all suburbs within approximately 50 km of Adelaide CBD. Tap a suburb to see its name, or use the location button to check if we cover your area.</p>
+            </div>
+            <div class="map-container">
+                <div id="map"></div>
+                <button class="find-location-btn" id="findLocationBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                    Find My Location
+                </button>
+            </div>
+            <div class="map-legend">
+                <div class="legend-item">
+                    <span class="legend-dot legend-dot-green"></span>
+                    Serviced suburb
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot legend-dot-orange"></span>
+                    Adelaide CBD
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot legend-dot-blue"></span>
+                    Your location
+                </div>
+                <div class="legend-item">
+                    <span class="legend-line"></span>
+                    Service boundary (~50km)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">GET IN TOUCH</span>
+                <h2>Get Your Free Quote</h2>
+                <p>Ready for a great-looking lawn? Give us a call or send us an email and we'll get back to you fast.</p>
+            </div>
+            <div class="contact-cards">
+                <a href="tel:0437932116" class="contact-card contact-card-primary">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <span class="contact-label">Call Us</span>
+                    <span class="contact-value">0437 932 116</span>
+                </a>
+                <a href="mailto:sakimtbdp@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </div>
+                    <span class="contact-label">Email Us</span>
+                    <span class="contact-value">sakimtbdp@gmail.com</span>
+                </a>
+            </div>
+            <div class="contact-info-bar">
+                <div class="contact-location">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Servicing Adelaide, SA
+                </div>
+                <div class="contact-hours">Mon&ndash;Fri: 7:00 AM &ndash; 6:00 PM</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="logo1.png" alt="Hutchy's Lawn Mowing Service" class="footer-logo-img">
+            </div>
+            <nav class="footer-nav">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+            <div class="footer-copyright">
+                &copy; 2026 Hutchy's Lawn Mowing Service. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-prompt" id="chatPrompt">
+            <span>&#128075; Need a quick quote?</span>
+            <button class="chat-prompt-close" id="chatPromptClose">&times;</button>
+        </div>
+        <button class="chat-btn" id="chatBtn" aria-label="Chat with us">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </button>
+    </div>
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">H</div>
+                <div>
+                    <strong>Hutchy's</strong>
+                    <span class="chat-status">Typically replies within an hour</span>
+                </div>
+            </div>
+            <button class="chat-close" id="chatClose">&times;</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-message bot">
+                <p>G'day! Welcome to Hutchy's Lawn Mowing Service. What can we help you with?</p>
+            </div>
+            <div class="chat-quick-actions" id="chatQuickActions">
+                <button class="chat-quick-btn" data-action="quote">Get a free quote</button>
+                <button class="chat-quick-btn" data-action="services">Our services</button>
+                <button class="chat-quick-btn" data-action="booking">Book a service</button>
+                <button class="chat-quick-btn" data-action="area">Service area</button>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off">
+            <button class="chat-send" id="chatSend">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
